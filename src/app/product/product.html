@@ -1,16 +1,20 @@
-<div>
-</div>
-
 <a [href]="link" target="_blank">Visit Facebook</a>
 <p>product works!</p>
 
-<p>{{name}}</p>
+<p>{{ name }}</p>
 <label for="Name">Name:</label>
-<input [(ngModel)]="name" >
+<input [(ngModel)]="name" />
 
-<p *ngIf="isLogin">Welcome {{name}}!</p>
+<p *ngIf="isLogin">Welcome {{ name }}!</p>
+
 <ul>
   <li *ngFor="let food of foods">
     {{ food }}
   </li>
+
+  <app-product-detail></app-product-detail>
 </ul>
+
+<div>
+    <app-product-detail [productName]="name"></app-product-detail>
+</div>
