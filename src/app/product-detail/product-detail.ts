@@ -5,9 +5,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   imports: [],
   templateUrl: './product-detail.html',
   styleUrl: './product-detail.css',
+  standalone: true,
 })
 export class ProductDetail {
-  @Input() productionName: string = '';
+  @Input() productName: string = '';
   @Output() handleClick = new EventEmitter<string>();
 
   handleSend() {

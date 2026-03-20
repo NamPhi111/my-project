@@ -14,3 +14,9 @@
 <router-outlet></router-outlet> -->
 <app-header></app-header>
 <router-outlet></router-outlet>
+<app-product-detail 
+  [productName]="'Iphone 15'"
+  (handleClick)="receiveData($event)">
+</app-product-detail>
+<a routerLink="/">Home</a>
+<a routerLink="/product">Product</a>

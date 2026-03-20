@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { ProductDetail } from '../product-detail/product-detail';
 
 @Component({
@@ -18,7 +17,7 @@ export class Product {
 
   isLogin = true;
 
-  foods = ['Pizza', 'Burger', 'Pasta'];
+  foods = ['Pasta'];
   name: string = "Iphone 15 pro max";
   price: number = 999.99
 
